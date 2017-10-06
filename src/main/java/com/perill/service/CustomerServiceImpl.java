@@ -11,6 +11,7 @@ public class CustomerServiceImpl implements CustomerService {
 	//need customer repospitory 
 	//business logic, the heart of the business, will be in the service tier
 	//Hard coded references are what spring excels at
+	//They shouldn't know they are using Hibernate, should be covered by spring
 	private CustomerRepository customerRepository = new HibernateCustomerRepositoryImpl();
 	
 	
